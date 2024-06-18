@@ -3,20 +3,28 @@ import React from "react";
 export const About = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base">
-        <div className="hero-content flex-col lg:flex-row">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+      <div className="hero min-h-screen bg-base-200">
+        <div className="hero-content flex-col text-justfiy lg:flex-row">
+          <div className="">
+            <h1 className="lg:text-7xl text-start text-4xl font-bold">
+              Hi my name is Zoren Jake Sarillana A Web Developer Based in Davao
+              City, Philippines
+            </h1>
+            <p className="py-6 text-justify">
+              you can call me Zo. I'm a Front and Back End Developer from Davao
+              City. I take pleasure in unleashing creativity and crafting
+              websites and applications that align perfectly with your
+              preferences, leveraging the latest technologies and implementing
+              clean design patterns.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <div className="flex space-x-4 items-center">
+              <a
+                className="btn btn-primary pr-4"
+                target="_blank"
+                rel="noopener noreferrer">
+                View Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>

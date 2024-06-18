@@ -32,7 +32,7 @@ function Header() {
           </div>
           <div className="flex-none hidden lg:flex justify-center">
             {/*theme switcher*/}
-            <ul class="menu menu-horizontal px-1">
+            <ul className="menu menu-horizontal px-1">
               <li>
                 <a>Home</a>
               </li>
