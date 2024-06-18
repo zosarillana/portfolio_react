@@ -69,12 +69,12 @@ export const Home = () => {
               <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
             </div>
             {/* Hero Content */}
-            <div className="inset-0 z-20 flex items-center justify-center text-center text-white">
+            <div className="inset-0 z-20 flex items-center text-start justify-center text-white">
               <div>
-                <h1 className="text-4xl font-extrabold mb-4">
+                <h1 className="text-3xl lg:text-4xl text-justify lg:text-start font-extrabold mb-4">
                   This web portfolio is created by a passionate developer
                 </h1>
-                <p className="text-2xl font-extrabold">
+                <p className="text-1xl lg:text-2xl font-extrabold">
                   Base in Davao City, Philipipnes
                 </p>
               </div>
