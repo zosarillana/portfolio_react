@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import About from "./hero/About";
 import Vid from "../videos/vid.mp4";
 import Plx from "react-plx";
+import Tools from "./hero/Tools";
+import Services from "./hero/Services";
 
 const parallaxDataScale = [
   {
@@ -85,6 +87,8 @@ export const Home = () => {
       {/* Other Sections */}
       <div className="z-30">
         <About />
+        <Tools />
+        <Services />
       </div>
     </div>
   );
