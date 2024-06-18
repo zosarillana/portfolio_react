@@ -12,7 +12,7 @@ const Footer = () => {
             className="w-20 h-20 object-cover rounded-lg shadow-2xl"
           />
           <div>
-            <p className="font-bold text-xl">zo.ren</p>
+            <p className="font-bold text-xl">dbl.zs</p>
             <p>zhou991818@gmail.com</p>
             <p>+63 9531829691</p>
           </div>

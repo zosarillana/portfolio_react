@@ -28,11 +28,27 @@ function Header() {
             </label>
           </div>
           <div className="flex-1 text-center lg:text-left">
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a className="btn btn-ghost text-xl">dbl.zs</a>
           </div>
-          <div className="flex-none  hidden lg:flex justify-center">
+          <div className="flex-none hidden lg:flex justify-center">
             {/*theme switcher*/}
-            {/* Assuming ThemeSwitcher is a component */}
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>About</a>
+              </li>
+              <li>
+                <a>Services</a>
+              </li>
+              <li>
+                <a>Works</a>
+              </li>
+              <li>
+                <a>Resume</a>
+              </li>
+            </ul>
             <ThemeSwitcher />
           </div>
         </div>

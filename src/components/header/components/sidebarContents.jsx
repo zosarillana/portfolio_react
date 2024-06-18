@@ -1,5 +1,6 @@
 import Logo from "../../images/logo.png";
 import React from "react";
+import ThemeSwitcher from "./themeSwitcher";
 
 export const sidebarContents = () => {
   return (
@@ -9,6 +10,7 @@ export const sidebarContents = () => {
           <img src={Logo} alt="Description" className="w-32 h-32" />
         </a>
       </div>
+
       <div className="flex justify-center mt-2">
         <p className="text-2xl font-bold">Zoren Jake Sarillana</p>
       </div>
@@ -50,23 +52,36 @@ export const sidebarContents = () => {
           </svg>
         </a>
       </div>
+      <div className="flex mt-2 lg:hidden justify-center">
+        <ThemeSwitcher />
+      </div>
       <div className="divider"></div>
-      {/* <div className="font-semibold">
+      <div className="lg:hidden ">
         <li>
           <a>Home</a>
         </li>
       </div>
-      <div className="font-semibold">
+      <div className="lg:hidden ">
         <li>
           <a>About</a>
         </li>
       </div>
-      <div className="font-semibold">
+      <div className="lg:hidden ">
         <li>
           <a>Works</a>
         </li>
-      </div> */}
-      <div className="font-semibold">
+      </div>
+      <div className="lg:hidden ">
+        <li>
+          <a>Services</a>
+        </li>
+      </div>
+      <div className="lg:hidden ">
+        <li>
+          <a>Resume</a>
+        </li>
+      </div>
+      <div className=" ">
         <li>
           <a>Contact Me</a>
         </li>
