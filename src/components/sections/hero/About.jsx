@@ -29,7 +29,7 @@ export const About = () => {
               className="btn btn-secondary pr-4"
               target="_blank"
               rel="noopener noreferrer">
-              View Resume
+              Download Resume
             </a>
           </div>
         </motion.div>

@@ -50,7 +50,12 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="section3" smooth={true} duration={500}>
+                <Link to="section4" smooth={true} duration={500}>
+                  Tools
+                </Link>
+              </li>
+              <li>
+                <Link to="section5" smooth={true} duration={500}>
                   Works
                 </Link>
               </li>

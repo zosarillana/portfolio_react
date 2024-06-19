@@ -74,14 +74,21 @@ export const sidebarContents = () => {
       <div className="lg:hidden ">
         <li>
           <Link to="section3" smooth={true} duration={500}>
-            Works
+            Services
           </Link>
         </li>
       </div>
       <div className="lg:hidden ">
         <li>
           <Link to="section4" smooth={true} duration={500}>
-            Services
+            Tools
+          </Link>
+        </li>
+      </div>
+      <div className="lg:hidden ">
+        <li>
+          <Link to="section5" smooth={true} duration={500}>
+            Works
           </Link>
         </li>
       </div>
