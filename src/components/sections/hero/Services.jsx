@@ -1,17 +1,38 @@
 import React from "react";
+import { motion, useInView } from "framer-motion";
 
 export const Services = () => {
+  const ref = React.useRef(null);
+  const ref1 = React.useRef(null);
+  const ref2 = React.useRef(null);
+  const ref3 = React.useRef(null);
+
+  const isInView = useInView(ref, { once: false, amount: 0.5 });
+  const isInView1 = useInView(ref1, { once: false, amount: 0.5 });
+  const isInView2 = useInView(ref2, { once: false, amount: 0.5 });
+  const isInView3 = useInView(ref3, { once: false, amount: 0.5 });
+
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content justify-center lg:justify-start">
           <div className="lg:mr-4 lg:text-left text-start">
-            <h1 className="lg:text-7xl text-start text-3xl font-extrabold">
+            <motion.div
+              ref={ref}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: isInView ? 1 : 0 }}
+              transition={{ duration: 0.35 }}
+              className="lg:text-7xl text-start text-3xl font-extrabold">
               What I Do
-            </h1>
+            </motion.div>
             <div className="flex flex-wrap pt-2">
-              <div className="w-full md:w-1/3 p-5">
-                <h1 className="lg:text-4xl pt-2  text-1xl font-bold flex items-center  text-start ">
+              <motion.div
+                ref={ref1}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: isInView1 ? 1 : 0 }}
+                transition={{ duration: 0.35, delay: 0.15 }}
+                className="w-full md:w-1/3 p-5">
+                <h1 className="lg:text-4xl pt-2 text-1xl font-bold flex items-center text-start">
                   Front End
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,8 +64,14 @@ export const Services = () => {
                   that enhances your online presence and achieves your business
                   goals.
                 </p>
-              </div>
-              <div className="w-full md:w-1/3 p-6">
+              </motion.div>
+
+              <motion.div
+                ref={ref2}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: isInView2 ? 1 : 0 }}
+                transition={{ duration: 0.35, delay: 0.2 }}
+                className="w-full md:w-1/3 p-5">
                 <h1 className="lg:text-4xl pt-2  text-1xl font-bold flex items-center  text-start ">
                   Back End
                   <svg
@@ -71,8 +98,13 @@ export const Services = () => {
                   that meets your specific requirements and exceeds
                   expectations.
                 </p>
-              </div>
-              <div className="w-full md:w-1/3 p-5">
+              </motion.div>
+              <motion.div
+                ref={ref3}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: isInView3 ? 1 : 0 }}
+                transition={{ duration: 0.35, delay: 0.25 }}
+                className="w-full md:w-1/3 p-5">
                 <h1 className="lg:text-4xl pt-2  text-1xl font-bold flex items-center  text-start ">
                   Editing
                   <svg
@@ -100,7 +132,7 @@ export const Services = () => {
                   every element meets your specific requirements. Whether it's
                   enhancing images, creating custom graphics, or editing videos.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
