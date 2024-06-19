@@ -17,25 +17,25 @@ export const Tools = () => {
               <h1 className="lg:text-2xl text-1xl font-bold text-start lg:text-center">
                 Front End
               </h1>
-              <p className="pt-2 text-justify">
+              <div className="pt-2 text-justify">
                 <FrontEnd />
-              </p>
+              </div>
             </div>
             <div className="w-full  lg:w-1/3 md:w-1/3 p-5">
               <h1 className="lg:text-2xl text-1xl font-bold text-start lg:text-center">
                 Back End
               </h1>
-              <p className="pt-2 text-justify">
+              <div className="pt-2 text-justify">
                 <BackEnd />
-              </p>
+              </div>
             </div>
             <div className="w-full md:w-1/3 p-5">
               <h1 className="lg:text-2xl text-1xl font-bold text-start lg:text-center">
                 Others
               </h1>
-              <p className="pt-2 text-justify">
+              <div className="pt-2 text-justify">
                 <Others />
-              </p>
+              </div>
             </div>
           </div>
         </div>
