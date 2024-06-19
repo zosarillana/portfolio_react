@@ -4,6 +4,7 @@ import Vid from "../videos/vid.mp4";
 import Plx from "react-plx";
 import Tools from "./hero/Tools";
 import Services from "./hero/Services";
+import MyWorksComponent from "./hero/Works";
 
 const parallaxDataScale = [
   {
@@ -89,6 +90,7 @@ export const Home = () => {
         <About />
         <Tools />
         <Services />
+        <MyWorksComponent />
       </div>
     </div>
   );
