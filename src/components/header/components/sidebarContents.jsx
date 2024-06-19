@@ -1,6 +1,7 @@
 import Logo from "../../images/logo.png";
 import React from "react";
 import ThemeSwitcher from "./themeSwitcher";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const sidebarContents = () => {
   return (
@@ -58,27 +59,37 @@ export const sidebarContents = () => {
       <div className="divider"></div>
       <div className="lg:hidden ">
         <li>
-          <a>Home</a>
+          <Link to="section1" smooth={true} duration={500}>
+            Home
+          </Link>
         </li>
       </div>
       <div className="lg:hidden ">
         <li>
-          <a>About</a>
+          <Link to="section2" smooth={true} duration={500}>
+            About
+          </Link>
         </li>
       </div>
       <div className="lg:hidden ">
         <li>
-          <a>Works</a>
+          <Link to="section3" smooth={true} duration={500}>
+            Works
+          </Link>
         </li>
       </div>
       <div className="lg:hidden ">
         <li>
-          <a>Services</a>
+          <Link to="section4" smooth={true} duration={500}>
+            Services
+          </Link>
         </li>
       </div>
       <div className="lg:hidden ">
         <li>
-          <a>Resume</a>
+          <Link to="section1" smooth={true} duration={500}>
+            Resume
+          </Link>
         </li>
       </div>
       <div className=" ">

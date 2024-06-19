@@ -2,6 +2,7 @@ import React from "react";
 import Home from "../sections/Home";
 import ThemeSwitcher from "./components/themeSwitcher";
 import SidebarContents from "./components/sidebarContents";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Header() {
   return (
@@ -34,19 +35,29 @@ function Header() {
             {/*theme switcher*/}
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a>Home</a>
+                <Link to="section1" smooth={true} duration={500}>
+                  Home
+                </Link>
               </li>
               <li>
-                <a>About</a>
+                <Link to="section2" smooth={true} duration={500}>
+                  About
+                </Link>
               </li>
               <li>
-                <a>Services</a>
+                <Link to="section4" smooth={true} duration={500}>
+                  Services
+                </Link>
               </li>
               <li>
-                <a>Works</a>
+                <Link to="section3" smooth={true} duration={500}>
+                  Works
+                </Link>
               </li>
               <li>
-                <a>Resume</a>
+                <Link to="section1" smooth={true} duration={500}>
+                  Resume
+                </Link>
               </li>
             </ul>
             <ThemeSwitcher />
@@ -59,6 +70,21 @@ function Header() {
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
           {/* Sidebar content here */}
+          <div className="flex justify-end">
+            <label htmlFor="my-drawer" className="btn btn-square btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block w-6 h-6 stroke-current">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </label>
+          </div>
           {/* Assuming SidebarContents is a component */}
           <SidebarContents />
         </ul>

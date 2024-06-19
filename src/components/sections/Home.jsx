@@ -58,7 +58,9 @@ export const Home = () => {
             width: "100%",
             zIndex: 0,
           }}>
-          <div className="hero min-h-screen bg-base-200 relative overflow-hidden">
+          <div
+            id="section1"
+            className="hero min-h-screen bg-base-200 relative overflow-hidden">
             {/* Video Background */}
             <div className="absolute inset-0 z-0">
               <video
@@ -87,10 +89,18 @@ export const Home = () => {
       </Plx>
       {/* Other Sections */}
       <div className="z-30">
-        <About />
-        <Tools />
-        <Services />
-        <MyWorksComponent />
+        <div id="section2">
+          <About />
+        </div>
+        <div id="section3">
+          <Tools />
+        </div>
+        <div id="section4">
+          <Services />
+        </div>
+        <div id="sectio5">
+          <MyWorksComponent />
+        </div>
       </div>
     </div>
   );
