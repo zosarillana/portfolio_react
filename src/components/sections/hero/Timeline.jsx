@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 
 export const Timeline = () => {
   const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.5 });
+  const isInView = useInView(ref, { once: false, threshold: 0.1 });
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col text-justfiy lg:flex-row">
@@ -31,18 +31,53 @@ export const Timeline = () => {
                   />
                 </svg>
               </div>
-              <div className="timeline-start md:text-end mb-10">
-                <time className="font-mono italic">1984</time>
+              <div className="timeline-end mb-10">
+                <time className="font-mono italic">2010 - 2014</time>
                 <div className="text-lg font-black">
-                  First Macintosh computer
+                  Camillo Osias Elementary School - Introverted kid
                 </div>
-                The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-                original Apple Macintosh personal computer. It played a pivotal
-                role in establishing desktop publishing as a general office
-                function. The motherboard, a 9 in (23 cm) CRT monitor, and a
-                floppy drive were housed in a beige case with integrated
-                carrying handle; it came with a keyboard and single-button
-                mouse.
+                I was introduced to video games and multiplayer experiences
+                began with my PSP and GameBoy, where I embarked on thrilling
+                adventures. From hunting monsters and crafting items to defeat
+                the Ancient Dragon in Monster Hunter, to stomping on Goombas and
+                defeating Bowser to save the princess in tunnels upon tunnels,
+                each game brought its own unique challenges and excitement.
+                Additionally, I found enjoyment in strategizing in DOTA to
+                defend the Ancients, and exploring a wide variety of other
+                engaging video games that fueled my passion for immersive gaming
+                experiences.
+              </div>
+              <hr />
+            </li>
+            <li>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5">
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-start md:text-end mb-10">
+                <time className="font-mono italic">2014 - 2018</time>
+                <div className="text-lg font-black">
+                  Junior High - ICT Daniel R. Aguinaldo NHS
+                </div>
+                I was introduced to the dynamic world of Information
+                Communication Technology (ICT), where my curiosity was ignited
+                to delve deeper into various IT-related disciplines. This
+                initial exposure motivated me to pursue further studies,
+                particularly focusing on computer hardware servicing. Through
+                hands-on experience and formal education, I honed my skills in
+                troubleshooting, maintaining, and upgrading computer
+                systems.This journey not only enriched my technical knowledge
+                but also solidified my passion for IT, paving the way for
+                continuous learning and growth in the field.
               </div>
               <hr />
             </li>
@@ -62,12 +97,20 @@ export const Timeline = () => {
                 </svg>
               </div>
               <div className="timeline-end mb-10">
-                <time className="font-mono italic">1998</time>
-                <div className="text-lg font-black">iMac</div>
-                iMac is a family of all-in-one Mac desktop computers designed
-                and built by Apple Inc. It has been the primary part of Apple's
-                consumer desktop offerings since its debut in August 1998, and
-                has evolved through seven distinct forms
+                <time className="font-mono italic">2018 - 2020</time>
+                <div className="text-lg font-black">
+                  Senior High - ICT Philippine's Women College of Davao
+                </div>
+                In senior high school, I immersed myself in a diverse array of
+                subjects, including Python, Java, JavaScript, PHP, HTML, and
+                CSS, which fueled my passion for pursuing a career as a web
+                developer. The opportunity to learn these programming languages
+                and delve into web development techniques not only broadened my
+                technical expertise but also ignited my creativity in creating
+                dynamic, visually captivating designs and functional interfaces.
+                I am driven by the challenge of crafting detailed solutions that
+                not only meet technical standards but also enhance user
+                experience and operational efficiency.
               </div>
               <hr />
             </li>
@@ -87,15 +130,22 @@ export const Timeline = () => {
                 </svg>
               </div>
               <div className="timeline-start md:text-end mb-10">
-                <time className="font-mono italic">2001</time>
-                <div className="text-lg font-black">iPod</div>
-                The iPod is a discontinued series of portable media players and
-                multi-purpose mobile devices designed and marketed by Apple Inc.
-                The first version was released on October 23, 2001, about 8+1⁄2
-                months after the Macintosh version of iTunes was released. Apple
-                sold an estimated 450 million iPod products as of 2022. Apple
-                discontinued the iPod product line on May 10, 2022. At over 20
-                years, the iPod brand is the oldest to be discontinued by Apple
+                <time className="font-mono italic">2020 - 2024</time>
+                <div className="text-lg font-black">
+                  University Of Mindanao - BSIT
+                </div>
+                "Currently, I am diligently enhancing my skills as a graduating
+                student at the University of Mindanao, pursuing a Bachelor of
+                Science in Information Technology. My coursework has provided me
+                with a comprehensive understanding of core IT principles,
+                including database management, software development, network
+                administration, and cybersecurity. I am actively engaged in
+                honing my practical skills through coursework, projects, and
+                internships, where I have gained hands-on experience in applying
+                theoretical knowledge to real-world scenarios. This academic
+                journey has not only deepened my technical proficiency but also
+                instilled in me a commitment to continuous learning and
+                adaptation to emerging technologies.
               </div>
               <hr />
             </li>
@@ -115,15 +165,13 @@ export const Timeline = () => {
                 </svg>
               </div>
               <div className="timeline-end mb-10">
-                <time className="font-mono italic">2007</time>
-                <div className="text-lg font-black">iPhone</div>
-                iPhone is a line of smartphones produced by Apple Inc. that use
-                Apple's own iOS mobile operating system. The first-generation
-                iPhone was announced by then-Apple CEO Steve Jobs on January 9,
-                2007. Since then, Apple has annually released new iPhone models
-                and iOS updates. As of November 1, 2018, more than 2.2 billion
-                iPhones had been sold. As of 2022, the iPhone accounts for 15.6%
-                of global smartphone market share
+                <time className="font-mono italic">2024 (February - June)</time>
+                <div className="text-lg font-black">MediaOne Intern</div> •
+                Enhanced and made the frontend POSIMS Systems made APIS passing
+                data from backend to frontend using Laravel, MySQL, Bootstrap
+                CSS, and Nginx. <br></br> • Enhanced the frontend of LGU-Kabacan
+                Treasury using Bootstrap CSS and Laravel. CSS, and Nginx.{" "}
+                <br></br> • Enhanced the frontend of MedtrackerPH.
               </div>
               <hr />
             </li>
@@ -143,12 +191,10 @@ export const Timeline = () => {
                 </svg>
               </div>
               <div className="timeline-start md:text-end mb-10">
-                <time className="font-mono italic">2015</time>
-                <div className="text-lg font-black">Apple Watch</div>
-                The Apple Watch is a line of smartwatches produced by Apple Inc.
-                It incorporates fitness tracking, health-oriented capabilities,
-                and wireless telecommunication, and integrates with iOS and
-                other Apple products and services
+                <time className="font-mono italic">2023 - Present</time>
+                <div className="text-lg font-black">Freelance Developer</div>•
+                Front end on H3Dev Team specializing in Web Development using
+                Laravel, JavaScript and MySQL
               </div>
             </li>
           </ul>

@@ -12,30 +12,36 @@ import covTracer from "../../../assets/works/covtracerph-mockup.png";
 const MyWorksComponent = () => {
   const projects = [
     {
-      image: timiOne,
-      title: "Timi Hardware POSIMS",
-      description:
-        "Front End on the Timi Hardware POSIMS using Bootstrap CSS, Javascript, HTML, CSS, Laravel and PHP. Where it contains a Main Branch and Global Branch.",
-    },
-    {
-      image: djfesOne,
-      title: "DJFES Student Management",
-      description:
-        "A OOP java application that manages the students grades and information. Made using JAVA and Mysql.",
-    },
-    {
-      image: pconnectOne,
-      title: "Paws Connect",
-      description:
-        "A dating app for fur pets created from scratch using PHP, JavaScript, Tailwind CSS, DaisyUI following a MVC framework.",
-    },
-
-    {
       image: sdocsOne,
       title: "Secure Docs",
       description:
         "A web-based document management application designed for Tolentino and Associates Law Firm, leveraging AES 256 tokenization and two-factor authentication for robust security of law firm cases using hybrid security measures. Built using Laravel, Tailwind CSS, JavaScript, MySQL, PHP, Google API, and hosted on Hostinger, this application ensures both functionality and security.",
     },
+    {
+      image: timiOne,
+      title: "Timi Hardware POSIMS",
+      description:
+        "Enhanced and made the front-end of Timi Hardware's POSIMS system for mobile and desktop responsiveness using Bootstrap CSS, JavaScript, HTML, and CSS, integrated with Laravel and PHP. The system supports a Sub Branch, Main Branch and Global Branch operations, utilizing WebSockets and APIs for efficient data exchange and real-time updates.",
+    },
+    {
+      image: covTracer,
+      title: "Cov Tracer PH",
+      description:
+        "A Covid Tracker providing up-to-date statistics and information on Covid-19 across regions in the Philippines. Users can select a region from a list to instantly view key data such as active cases, total cases, recoveries, recovery rate, deaths, and fatality rate. Developed using Laravel and PHP, with data sourced from the third-party API at documenter.getpostman.com, the tracker ensures accessible and accurate information for everyone.",
+    },
+    {
+      image: djfesOne,
+      title: "DJFES Student Management",
+      description:
+        "A Java-based object-oriented programming (OOP) application meticulously crafted to manage student records, grades, and other pertinent information for Dr. Jovito S Francisco Elementary School. This robust system utilizes JAVA for its backend logic and MySQL for efficient data management and storage.",
+    },
+    {
+      image: pconnectOne,
+      title: "Paws Connect",
+      description:
+        "Developed a dating app exclusively for furry pets, built entirely from scratch using PHP for robust backend operations, JavaScript for interactive frontend elements, and styled with Tailwind CSS and DaisyUI to ensure a modern and intuitive user interface. ",
+    },
+
     {
       image: campOne,
       title: "Campus Connect",
@@ -47,13 +53,7 @@ const MyWorksComponent = () => {
       image: ptestOne,
       title: "PersoTest APP",
       description:
-        "An app that determines your MBTI personality. Made with flutter and firebase.",
-    },
-    {
-      image: covTracer,
-      title: "Cov Tracer PH",
-      description:
-        "Cov Tracer PH is a Covid Tracker that makes the relevant statistics and information for Covid readily available for anyone. Essentially, the program contains all the regions of the Philippines, choosing a region from a list displays the current statistics such as active cases and total cases, recoveries and recovery rate, number of deaths and fatality rate. Made using Laravel, PHP and Third Party API from https://covid19-api-philippines.herokuapp.com",
+        " A mobile application built with Flutter and Firebase, designed to determine your Myers-Briggs Type Indicator (MBTI) personality. It guides users through a series of questions to provide accurate insights into their psychological preferences and behaviors based on the MBTI framework. ",
     },
   ];
 
@@ -97,7 +97,7 @@ const ProjectCard = ({ image, title, description }) => {
         <img src={image} className="w-full h-1/2 object-cover" alt={title} />
         <div className="p-4">
           <h2 className="text-xl font-bold mb-2">{title}</h2>
-          <p className="text-base">{description}</p>
+          <p className="text-base text-justify">{description}</p>
         </div>
       </div>
     </motion.div>

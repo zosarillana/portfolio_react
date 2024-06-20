@@ -102,7 +102,7 @@ export const Home = () => {
         <div id="section5">
           <MyWorksComponent />
         </div>
-        <div id="section5">
+        <div id="section6">
           <Timeline />
         </div>
       </div>
