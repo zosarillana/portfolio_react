@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
+import Resume from "../../../assets/CV_Sarillana.pdf";
 
 export const About = () => {
   const ref = React.useRef(null);
@@ -27,7 +28,8 @@ export const About = () => {
           <div className="flex space-x-4 items-center">
             <a
               className="btn btn-secondary pr-4"
-              target="_blank"
+              href={Resume}
+              download="CV_Sarillana.pdf"
               rel="noopener noreferrer">
               Download Resume
             </a>
