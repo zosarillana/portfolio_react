@@ -1,8 +1,14 @@
 import React from "react";
 import Home from "../sections/Home";
+import About from "../sections/hero/About";
+import Tools from "../sections/hero/Tools";
+import Services from "../sections/hero/Services";
+import Timeline from "../sections/hero/Timeline";
+import MyWorksComponent from "../sections/hero/Works";
 import ThemeSwitcher from "./components/themeSwitcher";
 import SidebarContents from "./components/sidebarContents";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Contact from "../contact/contact";
 
 function Header() {
   return (
@@ -14,7 +20,7 @@ function Header() {
           <div className="flex-none">
             <label
               htmlFor="my-drawer"
-              className="btn btn-square btn-ghost drawer-button">
+              className="btn btn-square lg:hidden btn-ghost drawer-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -35,7 +41,7 @@ function Header() {
             {/*theme switcher*/}
             <ul className="menu menu-horizontal px-1">
               <li>
-                <Link to="section1" smooth={true} duration={500}>
+                <Link to="section1" smooth={true} duration={1300}>
                   Home
                 </Link>
               </li>
@@ -45,7 +51,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="section4" smooth={true} duration={500}>
+                <Link to="section3" smooth={true} duration={500}>
                   Services
                 </Link>
               </li>
@@ -60,8 +66,13 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="section1" smooth={true} duration={500}>
-                  Resume
+                <Link to="section6" smooth={true} duration={500}>
+                  Timeline
+                </Link>
+              </li>
+              <li>
+                <Link to="section7" smooth={true} duration={500}>
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -70,6 +81,27 @@ function Header() {
         </div>
         {/* Page content here */}
         <Home />
+        {/* Other Sections */}
+        <div className="z-30">
+          <div id="section2">
+            <About />
+          </div>
+          <div id="section3">
+            <Services />
+          </div>
+          <div id="section4">
+            <Tools />
+          </div>
+          <div id="section5">
+            <MyWorksComponent />
+          </div>
+          <div id="section6">
+            <Timeline />
+          </div>
+          <div id="section7">
+            <Contact />
+          </div>
+        </div>
       </div>
       <div className="drawer-side z-50">
         <label htmlFor="my-drawer" className="drawer-overlay"></label>

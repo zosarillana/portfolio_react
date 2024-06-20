@@ -88,24 +88,6 @@ export const Home = () => {
           </div>
         </Plx>
       </Plx>
-      {/* Other Sections */}
-      <div className="z-30">
-        <div id="section2">
-          <About />
-        </div>
-        <div id="section4">
-          <Tools />
-        </div>
-        <div id="section3">
-          <Services />
-        </div>
-        <div id="section5">
-          <MyWorksComponent />
-        </div>
-        <div id="section6">
-          <Timeline />
-        </div>
-      </div>
     </div>
   );
 };

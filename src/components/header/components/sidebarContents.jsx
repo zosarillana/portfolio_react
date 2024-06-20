@@ -59,7 +59,7 @@ export const sidebarContents = () => {
       <div className="divider"></div>
       <div className="lg:hidden ">
         <li>
-          <Link to="section1" smooth={true} duration={500}>
+          <Link to="section1" smooth={true} duration={1300}>
             Home
           </Link>
         </li>
@@ -94,14 +94,16 @@ export const sidebarContents = () => {
       </div>
       <div className="lg:hidden ">
         <li>
-          <Link to="section1" smooth={true} duration={500}>
-            Resume
+          <Link to="section6" smooth={true} duration={500}>
+            Timeline
           </Link>
         </li>
       </div>
       <div className=" ">
         <li>
-          <a>Contact Me</a>
+          <Link to="section7" smooth={true} duration={500}>
+            Contact
+          </Link>
         </li>
       </div>
     </div>
