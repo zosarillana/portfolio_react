@@ -34,7 +34,7 @@ export const Timeline = () => {
               <div className="timeline-end mb-10">
                 <time className="font-mono italic">2010 - 2014</time>
                 <div className="text-lg font-black">
-                  Camillo Osias Elementary School - Introverted kid
+                  Camillo Osias Elementary School - Introduction to Computers
                 </div>
                 I was introduced to video games and multiplayer experiences
                 began with my PSP and GameBoy, where I embarked on thrilling
