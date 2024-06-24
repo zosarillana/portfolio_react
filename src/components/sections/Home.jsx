@@ -81,7 +81,7 @@ export const Home = () => {
                   This web portfolio is created by a passionate developer
                 </h1>
                 <p className="text-1xl lg:text-2xl font-extrabold">
-                  Base in Davao City, Philipipnes
+                  Based in Davao City, Philipipnes
                 </p>
               </div>
             </div>
