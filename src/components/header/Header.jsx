@@ -35,11 +35,18 @@ function Header() {
             </label>
           </div>
           <div className="flex-1 text-center lg:text-left">
-            <a className="btn btn-ghost text-xl">dbl.zs</a>
+            <Link
+              to="section1"
+              smooth={true}
+              duration={1300}
+              className="btn btn-ghost text-xl">
+              dbl.zs
+            </Link>
           </div>
-          <div className="flex-none hidden lg:flex justify-center">
+
+          <div className="flex-none justify-center">
             {/*theme switcher*/}
-            <ul className="menu menu-horizontal px-1">
+            <ul className="menu hidden lg:flex menu-horizontal px-1">
               <li>
                 <Link to="section1" smooth={true} duration={1300}>
                   Home

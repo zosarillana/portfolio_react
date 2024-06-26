@@ -6,6 +6,7 @@ import sdocsOne from "../../../assets/works/sdocs-mockup.png";
 import pconnectOne from "../../../assets/works/pconnect-mockup.png";
 import campOne from "../../../assets/works/camp-mockup.png";
 import djfesOne from "../../../assets/works/djfes-mockup.png";
+import wpinesOne from "../../../assets/works/wpines-mockup.png";
 import ptestOne from "../../../assets/works/ptestnbg-mockup.png";
 import covTracer from "../../../assets/works/covtracerph-mockup.png";
 
@@ -33,7 +34,13 @@ const MyWorksComponent = () => {
       image: djfesOne,
       title: "DJFES Student Management",
       description:
-        "A Java-based object-oriented programming (OOP) application meticulously crafted to manage student records, grades, and other pertinent information for Dr. Jovito S Francisco Elementary School. This robust system utilizes JAVA for its backend logic and MySQL for efficient data management and storage.",
+        "A Java-based object-oriented programming (OOP) application meticulously crafted to manage student records, grades, and other pertinent information for Dr. Jovito S Francisco Elementary School. This robust system utilizes JAVA and SQL for its backend logic and MySQL for efficient data management and storage.",
+    },
+    {
+      image: wpinesOne,
+      title: "Whispering Pines Hotel Management and Scheduling",
+      description:
+        "This Java-based application is meticulously crafted using object-oriented programming (OOP) principles to provide a comprehensive solution for managing client records. It features a robust system for tracking payments, maintaining detailed client histories, and scheduling appointments. This system utilizes JAVA and SQL for its backend logic and MSSQL for efficient data management and storage. ",
     },
     {
       image: pconnectOne,

@@ -53,9 +53,9 @@ export const sidebarContents = () => {
           </svg>
         </a>
       </div>
-      <div className="flex mt-2 lg:hidden justify-center">
+      {/* <div className="flex mt-2 lg:hidden justify-center">
         <ThemeSwitcher />
-      </div>
+      </div> */}
       <div className="divider"></div>
       <div className="lg:hidden ">
         <li>
