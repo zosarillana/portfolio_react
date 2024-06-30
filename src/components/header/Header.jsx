@@ -88,6 +88,7 @@ function Header() {
         </div>
         {/* Page content here */}
         <Home />
+
         {/* Other Sections */}
         <div className="z-30">
           <div id="section2">
