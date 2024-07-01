@@ -13,29 +13,25 @@ const Certificates = () => {
       image: nc2,
       id: "my_img_modal_1",
       title: "TESDA CSS NC2",
-      description:
-        "A web-based document management application designed for Tolentino and Associates Law Firm, leveraging AES 256 tokenization and two-factor authentication for robust security of law firm cases using hybrid security measures. Built using Laravel, Tailwind CSS, JavaScript, MySQL, PHP, Google API, and hosted on Hostinger, this application ensures both functionality and security.",
+      description: "TESDA Computer System Servicing National Certificate 2",
     },
     {
       image: net,
       id: "my_img_modal_2",
       title: "ITS - Networking",
-      description:
-        "Enhanced and made the front-end of Timi Hardware's POSIMS system for mobile and desktop responsiveness using Bootstrap CSS, JavaScript, HTML, and CSS, integrated with Laravel and PHP. The system supports a Sub Branch, Main Branch and Global Branch operations, utilizing WebSockets and APIs for efficient data exchange and real-time updates.",
+      description: "IT Specialist Certification in Newtorking",
     },
     {
       image: netsec,
       id: "my_img_modal_3",
       title: "ITS - Network Security",
-      description:
-        "A Covid Tracker providing up-to-date statistics and information on Covid-19 across regions in the Philippines. Users can select a region from a list to instantly view key data such as active cases, total cases, recoveries, recovery rate, deaths, and fatality rate. Developed using Laravel and PHP, with data sourced from the third-party API at documenter.getpostman.com, the tracker ensures accessible and accurate information for everyone.",
+      description: "IT Specialist Certification in Network Security",
     },
     {
       image: m1cert,
       id: "my_img_modal_4",
       title: "MediaOne Certificate of Completion",
-      description:
-        "A Covid Tracker providing up-to-date statistics and information on Covid-19 across regions in the Philippines. Users can select a region from a list to instantly view key data such as active cases, total cases, recoveries, recovery rate, deaths, and fatality rate. Developed using Laravel and PHP, with data sourced from the third-party API at documenter.getpostman.com, the tracker ensures accessible and accurate information for everyone.",
+      description: "MediaOne PH Internship Certificate of Completion",
     },
   ];
 
@@ -91,7 +87,7 @@ const ProjectCard = ({ image, title, description, id }) => {
           <p className="text-base text-justify">{description}</p>
         </div>
       </div>
-      <ImageModal id={id} image={modalImage} />{" "}
+      <ImageModal id={id} title={title} image={modalImage} />{" "}
       {/* Pass modalImage as the image prop */}
     </motion.div>
   );

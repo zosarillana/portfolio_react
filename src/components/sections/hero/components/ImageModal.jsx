@@ -1,6 +1,6 @@
 import React from "react";
 
-const ImageModal = ({ id, image }) => {
+const ImageModal = ({ id, image, title, modal_description }) => {
   const openModal = () => {
     // Add overflow hidden to the modal dialog
     const modal = document.getElementById(id);
@@ -25,9 +25,11 @@ const ImageModal = ({ id, image }) => {
             ✕
           </button>
         </form>
-        <div className="py-4 mt-4 overflow-hidden">
+        <h3 className="font-bold text-lg  pt-2">{title}</h3>
+        <div className="py-4  overflow-hidden">
           <img src={image} alt="Certificate" className="max-w-full h-auto" />
         </div>
+        <div className="py-4 pt-2 text-justify">{modal_description}</div>
       </div>
     </dialog>
   );
