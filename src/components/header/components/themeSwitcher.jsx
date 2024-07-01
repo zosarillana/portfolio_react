@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState("business");
+  const [theme, setTheme] = useState("lofi");
   const [transitioning, setTransitioning] = useState(false);
 
   useEffect(() => {

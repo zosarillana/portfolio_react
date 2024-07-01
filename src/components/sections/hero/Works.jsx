@@ -65,7 +65,7 @@ const MyWorksComponent = () => {
   ];
 
   return (
-    <div className="hero min-h-screen bg-base-800">
+    <div className="hero min-h-screen bg-base-200">
       <div className="hero-content justify-center lg:justify-start">
         <div className="pt-5 flex flex-wrap justify-start">
           <h1 className="lg:text-7xl text-start text-3xl font-extrabold">
@@ -101,7 +101,7 @@ const ProjectCard = ({ image, title, description }) => {
       transition={{ duration: 0.5 }}
       className="w-full md:w-1/2 lg:w-1/3 p-4">
       <div className="card h-full bg-base-100 shadow-lg rounded-lg overflow-hidden">
-        <img src={image} className="w-full h-1/2 object-cover" alt={title} />
+        <img src={image} className="w-full h-56/2 object-cover" alt={title} />
         <div className="p-4">
           <h2 className="text-xl font-bold mb-2">{title}</h2>
           <p className="text-base text-justify">{description}</p>

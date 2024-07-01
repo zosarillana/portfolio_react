@@ -6,7 +6,7 @@ export const About = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.5 });
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-800">
       <div className="hero-content flex-col text-justfiy lg:flex-row">
         <motion.div
           ref={ref}
@@ -27,7 +27,7 @@ export const About = () => {
           </p>
           <div className="flex space-x-4 items-center">
             <a
-              className="btn btn-secondary pr-4"
+              className="btn btn-wide font-extrabold btn-secondary pr-4"
               href={Resume}
               download="CV_Sarillana.pdf"
               rel="noopener noreferrer">

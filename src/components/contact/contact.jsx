@@ -59,7 +59,7 @@ const Contact = () => {
   }, [alertMessage, alertType]);
 
   return (
-    <div className="min-h-screen bg-base-200 flex items-center justify-center">
+    <div className="min-h-screen bg-base-800 flex items-center justify-center">
       <div className="w-full max-w-4xl p-6 bg-base-300 shadow-lg">
         <h1 className="text-5xl font-bold">Contact me</h1>
         {/* Contact information */}

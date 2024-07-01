@@ -52,14 +52,14 @@ const Home = () => {
     if (scrollPosition < section1Height) {
       return (
         <Link to="section7" {...linkProps}>
-          <div className="p-3 rounded-full border-4 border-white glass">
+          <div className="p-3 rounded-full border-4 border-primary glass">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-10 h-10 lg:w-10 lg:h-10 xl:w-12 xl:h-12">
+              className="w-10 h-10 lg:w-10 lg:h-10 xl:w-12 xl:h-12 text-secondary">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -72,14 +72,14 @@ const Home = () => {
     } else {
       return (
         <Link to="section1" {...linkProps}>
-          <div className="p-3 rounded-full border-4 border-white glass">
+          <div className="p-3 rounded-full border-4 border-primary glass">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-10 h-10 lg:w-10 lg:h-10 xl:w-12 xl:h-12">
+              className="w-10 h-10 lg:w-10 lg:h-10 xl:w-12 xl:h-12 text-secondary">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

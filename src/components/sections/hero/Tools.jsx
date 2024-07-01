@@ -32,6 +32,14 @@ const Tools = () => {
             className="lg:text-7xl text-4xl font-extrabold text-start">
             Tools I rely on for programming
           </motion.div>
+          <motion.div
+            ref={frontEndRef}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: frontEndInView ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
+            className="lg:text-sm text-xs mt-5 font-bold text-start lg:text-center">
+            ( Click the icons! )
+          </motion.div>
 
           <div className="flex flex-wrap pt-3">
             <motion.div

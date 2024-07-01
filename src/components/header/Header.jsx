@@ -9,6 +9,7 @@ import ThemeSwitcher from "./components/themeSwitcher";
 import SidebarContents from "./components/sidebarContents";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Contact from "../contact/contact";
+import Cerficicates from "../sections/hero/Certificates";
 
 function Header() {
   return (
@@ -73,6 +74,11 @@ function Header() {
                 </Link>
               </li>
               <li>
+                <Link to="section8" smooth={true} duration={500}>
+                  Certificates
+                </Link>
+              </li>
+              <li>
                 <Link to="section6" smooth={true} duration={500}>
                   Timeline
                 </Link>
@@ -102,6 +108,9 @@ function Header() {
           </div>
           <div id="section5">
             <MyWorksComponent />
+          </div>
+          <div id="section8">
+            <Cerficicates />
           </div>
           <div id="section6">
             <Timeline />
