@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Link, Element } from "react-scroll";
 import Plx from "react-plx";
 import Vid from "../videos/vid.mp4";
@@ -36,6 +37,15 @@ const parallaxDataHeight = [
 ];
 
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const alertElement = document.getElementById("alert");
+    setTimeout(() => {
+      alertElement.style.opacity = 0;
+    }, 1000); // Change the delay as needed
+  }, []);
+
   const scrollPosition = useScrollPosition(); // Use the custom hook
 
   // Define the breakpoint for when to switch the button
@@ -46,7 +56,7 @@ const Home = () => {
       smooth: true,
       duration: 1300,
       className:
-        "z-20 text-white flex flex-col shrink-0 grow-0 justify-around fixed bottom-0 right-0 right-5 rounded-lg mr-1 mb-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10 cursor-pointer",
+        "z-50 text-white flex flex-col shrink-0 grow-0 justify-around fixed bottom-0 right-0 right-5 rounded-lg mr-1 mb-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10 cursor-pointer",
     };
 
     if (scrollPosition < section1Height) {
@@ -142,6 +152,37 @@ const Home = () => {
         </Plx>
       </Plx>
       <div className="relative">{renderLink()}</div>
+      {isVisible && (
+        <motion.div
+          id="alert"
+          role="alert"
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 0 }}
+          transition={{ duration: 8.8 }}
+          className="alert shadow-lg justify-around fixed bottom-0 rounded-md mr-1 mb-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10 lg:mt-20 lg:hidden z-50"
+          onAnimationComplete={() => setIsVisible(false)} // Hide component after animation completes
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            className="stroke-info h-6 w-6 shrink-0">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <div>
+            <h3 className="font-bold">Quick Tip!</h3>
+            <div className="text-xs">
+              When in mobile view, you can do quick navigation by clicking the
+              drawer!
+            </div>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 };

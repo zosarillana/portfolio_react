@@ -9,11 +9,13 @@ const Modal = ({ id, title, content, logo }) => {
             ✕
           </button>
         </form>
-
         <h3 className="font-bold text-lg">{logo}</h3>
-        <h3 className="font-bold text-lg pt-2">{title}</h3>
-        <div className="py-4 pt-2 text-justify">{content}</div>
+        <h3 className="font-extrabold text-lg pt-2">{title}</h3>
+        <h1 className="font-light text-justify text-lg pt-2">{content}</h1>
       </div>
+      <form method="dialog" className="modal-backdrop">
+        <button>close</button>
+      </form>
     </dialog>
   );
 };

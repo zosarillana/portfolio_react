@@ -25,12 +25,17 @@ const ImageModal = ({ id, image, title, modal_description }) => {
             ✕
           </button>
         </form>
-        <h3 className="font-bold text-lg  pt-2">{title}</h3>
         <div className="py-4  overflow-hidden">
           <img src={image} alt="Certificate" className="max-w-full h-auto" />
         </div>
-        <div className="py-4 pt-2 text-justify">{modal_description}</div>
+        <h3 className="font-bold text-lg  pt-2">{title}</h3>
+        <div className="font-light py-4 pt-2 text-justify">
+          {modal_description}
+        </div>
       </div>
+      <form method="dialog" className="modal-backdrop">
+        <button>close</button>
+      </form>
     </dialog>
   );
 };
