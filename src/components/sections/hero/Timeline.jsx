@@ -32,20 +32,14 @@ export const Timeline = () => {
                 </svg>
               </div>
               <div className="timeline-start md:text-end mb-10">
-                <time className="font-mono italic">2014 - 2018</time>
-                <div className="text-lg font-black">
-                  Junior High - ICT Daniel R. Aguinaldo NHS
-                </div>
-                I was introduced to the dynamic world of Information
-                Communication Technology (ICT), where my curiosity was ignited
-                to delve deeper into various IT-related disciplines. This
-                initial exposure motivated me to pursue further studies,
-                particularly focusing on computer hardware servicing. Through
-                hands-on experience and formal education, I honed my skills in
-                troubleshooting, maintaining, and upgrading computer
-                systems.This journey not only enriched my technical knowledge
-                but also solidified my passion for IT, paving the way for
-                continuous learning and growth in the field.
+                <time className="font-mono italic">2023 - Present</time>
+                <div className="text-lg font-black">Freelance Developer</div>•
+                Front end on H3Dev Team specializing in Web Development using
+                Laravel, JavaScript and MySQL
+                <br></br> • Made custom UI/UX, Detailed reports, Capstones, Web
+                Systems, Java applications for direct clients. Maintained direct
+                communication, trained clients and develop good rapport on
+                clients.
               </div>
               <hr />
             </li>
@@ -65,20 +59,16 @@ export const Timeline = () => {
                 </svg>
               </div>
               <div className="timeline-end mb-10">
-                <time className="font-mono italic">2018 - 2020</time>
-                <div className="text-lg font-black">
-                  Senior High - ICT Philippine's Women College of Davao
-                </div>
-                In senior high school, I immersed myself in a diverse array of
-                subjects, including Python, Java, JavaScript, PHP, HTML, and
-                CSS, which fueled my passion for pursuing a career as a web
-                developer. The opportunity to learn these programming languages
-                and delve into web development techniques not only broadened my
-                technical expertise but also ignited my creativity in creating
-                dynamic, visually captivating designs and functional interfaces.
-                I am driven by the challenge of crafting detailed solutions that
-                not only meet technical standards but also enhance user
-                experience and operational efficiency.
+                <time className="font-mono italic">2024 (February - June)</time>
+                <div className="text-lg font-black">MediaOne Intern</div> •
+                Enhanced and made the frontend POSIMS Systems made APIS passing
+                data from backend to frontend using Laravel, MySQL, Bootstrap
+                CSS, and Nginx. <br></br> • Enhanced the frontend of LGU-Kabacan
+                Treasury using Bootstrap CSS and Laravel. CSS, and Nginx.{" "}
+                <br></br> • Trained the clients for on how to use POSIMS.
+                <br></br> • Enhanced the frontend of MedtrackerPH.
+                <br></br> • Troubleshooted and Maintained Computer Hardware For
+                the Company.
               </div>
               <hr />
             </li>
@@ -132,14 +122,22 @@ export const Timeline = () => {
                   />
                 </svg>
               </div>
+
               <div className="timeline-end mb-10">
-                <time className="font-mono italic">2024 (February - June)</time>
-                <div className="text-lg font-black">MediaOne Intern</div> •
-                Enhanced and made the frontend POSIMS Systems made APIS passing
-                data from backend to frontend using Laravel, MySQL, Bootstrap
-                CSS, and Nginx. <br></br> • Enhanced the frontend of LGU-Kabacan
-                Treasury using Bootstrap CSS and Laravel. CSS, and Nginx.{" "}
-                <br></br> • Enhanced the frontend of MedtrackerPH.
+                <time className="font-mono italic">2018 - 2020</time>
+                <div className="text-lg font-black">
+                  Senior High - ICT Philippine's Women College of Davao
+                </div>
+                In senior high school, I immersed myself in a diverse array of
+                subjects, including Python, Java, JavaScript, PHP, HTML, and
+                CSS, which fueled my passion for pursuing a career as a web
+                developer. The opportunity to learn these programming languages
+                and delve into web development techniques not only broadened my
+                technical expertise but also ignited my creativity in creating
+                dynamic, visually captivating designs and functional interfaces.
+                I am driven by the challenge of crafting detailed solutions that
+                not only meet technical standards but also enhance user
+                experience and operational efficiency.
               </div>
               <hr />
             </li>
@@ -158,11 +156,22 @@ export const Timeline = () => {
                   />
                 </svg>
               </div>
+
               <div className="timeline-start md:text-end mb-10">
-                <time className="font-mono italic">2023 - Present</time>
-                <div className="text-lg font-black">Freelance Developer</div>•
-                Front end on H3Dev Team specializing in Web Development using
-                Laravel, JavaScript and MySQL
+                <time className="font-mono italic">2014 - 2018</time>
+                <div className="text-lg font-black">
+                  Junior High - ICT Daniel R. Aguinaldo NHS
+                </div>
+                I was introduced to the dynamic world of Information
+                Communication Technology (ICT), where my curiosity was ignited
+                to delve deeper into various IT-related disciplines. This
+                initial exposure motivated me to pursue further studies,
+                particularly focusing on computer hardware servicing. Through
+                hands-on experience and formal education, I honed my skills in
+                troubleshooting, maintaining, and upgrading computer
+                systems.This journey not only enriched my technical knowledge
+                but also solidified my passion for IT, paving the way for
+                continuous learning and growth in the field.
               </div>
             </li>
           </ul>
