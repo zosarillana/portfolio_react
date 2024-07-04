@@ -1,16 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/footer";
+import Preloader from "./Preloader";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay (e.g., fetching data)
+    setTimeout(() => {
+      setIsLoading(false); // Set loading state to false after content is loaded
+    }, 2300); // Adjust the delay time as needed
+  }, []);
+
   return (
     <div>
-      <div>
-        <Header />
-
-        <Footer />
-      </div>
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <div>
+          <Header />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };
