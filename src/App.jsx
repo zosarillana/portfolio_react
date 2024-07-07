@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/footer";
@@ -22,6 +24,7 @@ const App = () => {
         <div>
           <Header />
           <Footer />
+          <SpeedInsights />
         </div>
       )}
     </div>
