@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import suyOne from "../../../assets/works/suyportal.png";
+import sgcOne from "../../../assets/works/sgc-crm.png";
+import itamOne from "../../../assets/works/itam.png";
 import timiOne from "../../../assets/works/timi-mockup.png";
 import sdocsOne from "../../../assets/works/sdocs-mockup.png";
 import pconnectOne from "../../../assets/works/pconnect-mockup.png";
@@ -13,6 +16,27 @@ import ImageModal from "./components/ImageModal";
 
 const MyWorksComponent = () => {
   const projects = [
+    {
+      image: suyOne,
+      title: "Suy Portal",
+      description:
+        "A website that serves as a portal for all the system and websites of Suy Group of Companies, This is also shows all the events posted for all departments (filtered) and it is also a website where admins and executives can post events in the companies. This website is built with Angular, Material Ui, Tailwind CSS, Typescript, Asp.Net, MSSSQL. This system streamlines the management of IT assets, ensuring efficient tracking and organization. It is hosted in IIS.  ",
+      id: "my_works_modal_11",
+    },
+    {
+      image: sgcOne,
+      title: "SGC CRM (Customer Relationship Management)",
+      description:
+        "A CRM tailored for Suy Group Of Companies designed and built with Angular, Material Ui, Tailwind CSS, Typescript, Asp.Net, MSSSQL. This system streamlines the management of IT assets, ensuring efficient tracking and organization. It is hosted in IIS.  ",
+      id: "my_works_modal_10",
+    },
+    {
+      image: itamOne,
+      title: "ITAMS - IT Asset Management System",
+      description:
+        "A comprehensive IT Asset Management System designed for Ana's Breeders Farms built with Angular, Material Ui, Fuse Template, Tailwind CSS, Typescript, ASP.Net, MSSSQL. This system streamlines the management of IT assets, ensuring efficient tracking and organization. It is hosted in IIS.",
+      id: "my_works_modal_9",
+    },
     {
       image: sdocsOne,
       title: "Secure Docs",
@@ -85,7 +109,7 @@ const MyWorksComponent = () => {
                 image={project.image}
                 title={project.title}
                 description={project.description}
-                id={project.id} // Pass the id for modal identification
+                id={project.id}
               />
             ))}
           </div>
@@ -101,11 +125,23 @@ const ProjectCard = ({ image, title, description, id }) => {
     threshold: 0.5,
   });
 
-  const [modalImage, setModalImage] = useState(""); // State to hold the image URL for the modal
+  const [modalImage, setModalImage] = useState("");
+
+  // Function to truncate text to a specific word count
+  const truncateText = (text, wordCount = 15) => {
+    const words = text.split(" ");
+    if (words.length > wordCount) {
+      return words.slice(0, wordCount).join(" ") + "...";
+    }
+    return text;
+  };
+
+  // Truncated description for the card
+  const truncatedDescription = truncateText(description);
 
   const openModal = () => {
-    setModalImage(image); // Set the image URL to display in the modal
-    document.getElementById(id).showModal(); // Trigger the modal by its id
+    setModalImage(image);
+    document.getElementById(id).showModal();
   };
 
   return (
@@ -115,12 +151,16 @@ const ProjectCard = ({ image, title, description, id }) => {
       animate={{ opacity: inView ? 1 : 0 }}
       transition={{ duration: 0.5 }}
       onClick={openModal}
-      className="w-full md:w-1/2 lg:w-1/3 p-4">
+      className="w-full md:w-1/2 lg:w-1/3 p-4"
+    >
       <div className="card h-full bg-base-100 shadow-lg rounded-lg overflow-hidden cursor-pointer">
         <img src={image} className="w-full h-56 object-cover" alt={title} />
         <div className="p-4">
           <h2 className="text-xl font-bold mb-2">{title}</h2>
-          <p className="text-base text-justify">{description}</p>
+          <p className="text-base text-justify">{truncatedDescription}</p>
+          <div className="mt-2">
+            <button className="text-blue-500 hover:underline">Read more</button>
+          </div>
         </div>
       </div>
       <ImageModal
@@ -128,8 +168,7 @@ const ProjectCard = ({ image, title, description, id }) => {
         title={title}
         image={modalImage}
         modal_description={description}
-      />{" "}
-      {/* Pass modalImage as the image prop */}
+      />
     </motion.div>
   );
 };

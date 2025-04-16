@@ -25,14 +25,29 @@ export const About = () => {
             leveraging the latest technologies and implementing clean design
             patterns.
           </p>
-          <div className="flex space-x-4 items-center">
-            <a
-              className="btn btn-wide font-extrabold btn-secondary pr-4"
-              href={Resume}
-              download="CV_Sarillana.pdf"
-              rel="noopener noreferrer">
-              Download Resume
-            </a>
+          <div className="flex space-x-4 items-center"
+          >
+         <button
+  className="tooltip tooltip-primary tooltip-bottom cursor-pointer btn btn-wide font-extrabold btn-secondary pr-4"
+  onClick={() => {
+    // Trigger file download
+    const link = document.createElement("a");
+    link.href = Resume;
+    link.download = "CV_Sarillana.pdf";
+    link.click();
+  }}
+  data-tip="This resume is outdated"
+  style={{ position: 'relative' }}
+>
+  Download Resume
+  <style>
+    {`
+      .tooltip[data-tip="This resume is outdated"] {
+        font-weight: normal !important; /* Make tooltip text not bold */
+      }
+    `}
+  </style>
+</button>
           </div>
         </motion.div>
       </div>

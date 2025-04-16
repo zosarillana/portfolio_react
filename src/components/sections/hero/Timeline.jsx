@@ -12,7 +12,8 @@ export const Timeline = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: isInView ? 1 : 0 }}
           transition={{ duration: 0.35 }}
-          className="">
+          className=""
+        >
           <h1 className="lg:text-7xl text-start text-4xl font-extrabold">
             Timeline
           </h1>
@@ -23,7 +24,39 @@ export const Timeline = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="h-5 w-5">
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end md:text-start mb-10">
+                <time className="font-mono italic">2024 - Present</time>
+                <div className="text-lg font-black">
+                  Project Software Developer JR - Anas Breeders Farms Inc.
+                </div>
+                • Peoject Software Developer in Anas Breeders Farms Inc. Mainly
+                Focusing in using React, Angular, IIS, MSSQL, Typescript
+                <br></br> • Made multiple projects and maintaining the projects
+                that i have produced in ANAS BREEDERS FARMS INC. Maintained good
+                communication on hire ups Contributed to other projects and as
+                well being a good team player to other developers.
+                <br></br> • Troubleshooting and backjob completion for projects
+                that are not yet finished.
+              </div>
+              <hr />
+            </li>
+            <li>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -32,7 +65,7 @@ export const Timeline = () => {
                 </svg>
               </div>
               <div className="timeline-start md:text-end mb-10">
-                <time className="font-mono italic">2023 - Present</time>
+                <time className="font-mono italic">2023 - 2024</time>
                 <div className="text-lg font-black">Freelance Developer</div>•
                 Front end on H3Dev Team specializing in Web Development using
                 Laravel, JavaScript and MySQL
@@ -50,7 +83,8 @@ export const Timeline = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="h-5 w-5">
+                  className="h-5 w-5"
+                >
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -79,7 +113,8 @@ export const Timeline = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="h-5 w-5">
+                  className="h-5 w-5"
+                >
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -114,7 +149,8 @@ export const Timeline = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="h-5 w-5">
+                  className="h-5 w-5"
+                >
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -148,7 +184,8 @@ export const Timeline = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="h-5 w-5">
+                  className="h-5 w-5"
+                >
                   <path
                     fillRule="evenodd"
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
